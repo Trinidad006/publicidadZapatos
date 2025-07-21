@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap');
+
+body {
+    background: #f5f6fa;
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.marketplace-flex {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(30,40,60,0.10);
+    max-width: 900px;
+    width: 100%;
+    margin: 40px 0;
+    overflow: hidden;
+    border: 1.5px solid #e5e7eb;
+}
+.marketplace-img-col {
+    flex: 1 1 340px;
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 240px;
+    min-height: 340px;
+    padding: 40px 0;
+    border-right: 1.5px solid #e5e7eb;
+}
+.product-image-side {
+    width: 92%;
+    max-width: 340px;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(30,40,60,0.08);
+    background: transparent;
+    object-fit: contain;
+    display: block;
+    border: 1.5px solid #e5e7eb;
+}
+.marketplace-info-col {
+    flex: 2 1 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 40px 32px 40px;
+    background: #fff;
+}
+.product-main-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 18px;
+}
+.badge {
+    position: static;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    background: #f3f4f6;
+    color: #2e7d32;
+    padding: 3px 16px;
+    border-radius: 16px;
+    font-size: 0.92rem;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 500;
+    border: 1.2px solid #e5e7eb;
+    box-shadow: none;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+}
+.badge-pop {
+    background: #f3f4f6;
+    color: #2e7d32;
+    margin-right: 0;
+}
+.product-title {
+    color: #1a1a1a;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.1rem;
+    margin: 0 0 10px 0;
+    text-align: left;
+    word-break: break-word;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.product-price {
+    color: #256029;
+    font-size: 1.25rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin: 0 0 18px 0;
+    text-align: left;
+    letter-spacing: 0.2px;
+}
+.product-actions {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+#add-to-cart, #contact-seller {
+    background: #fff;
+    color: #256029;
+    border: 1.5px solid #256029;
+    border-radius: 8px;
+    padding: 8px 28px;
+    font-size: 1.05rem;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: none;
+    transition: background 0.2s, color 0.2s, border 0.2s, transform 0.1s;
+    margin-bottom: 6px;
+    letter-spacing: 0.2px;
+}
+#add-to-cart:hover, #contact-seller:hover {
+    background: #256029;
+    color: #fff;
+    border-color: #256029;
+    transform: scale(1.04);
+}
+#contact-seller {
+    background: #fff;
+    color: #256029;
+    border: 1.5px solid #256029;
+}
+#contact-seller:hover {
+    background: #256029;
+    color: #fff;
+}
+#cart-message {
+    color: #256029;
+    font-size: 1rem;
+    margin-top: 8px;
+    text-align: left;
+    font-family: 'Inter', Arial, sans-serif;
+}
+hr.section-divider {
+    border: none;
+    border-top: 1.2px solid #e5e7eb;
+    margin: 24px 0 18px 0;
+}
+.product-details-section, .product-desc-section {
+    width: 100%;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+.product-details-section h2, .product-desc-section h2 {
+    font-size: 1.13rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+.details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+.details-list li {
+    font-size: 1.04rem;
+    color: #333;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 400;
+    font-family: 'Inter', Arial, sans-serif;
+}
+.product-desc-section p {
+    color: #444;
+    font-size: 1.04rem;
+    margin: 0;
+    word-break: break-word;
+    font-weight: 400;
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.7;
+}
+.seller-profile {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 32px 0 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1.2px solid #e5e7eb;
+    padding-top: 18px;
+}
+.seller-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1.5px solid #e5e7eb;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seller-name {
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+    font-size: 1.08rem;
+    font-family: 'Playfair Display', serif;
+}
+.seller-status {
+    color: #888;
+    font-size: 0.97rem;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Inter', Arial, sans-serif;
+}
+@media (max-width: 900px) {
+    .marketplace-flex {
+        flex-direction: column;
+        max-width: 99vw;
+        border-radius: 0;
+        margin: 0;
+        box-shadow: none;
+        border: none;
+    }
+    .marketplace-img-col {
+        min-width: 0;
+        min-height: 180px;
+        padding: 16px 0 8px 0;
+        border-right: none;
+        border-bottom: 1.5px solid #e5e7eb;
+    }
+    .product-image-side {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .marketplace-info-col {
+        padding: 18px 10px 18px 10px;
+    }
+    .product-title {
+        font-size: 1.25rem;
+    }
+    .product-price {
+        font-size: 1.05rem;
+    }
+    .product-actions {
+        flex-direction: column;
+        gap: 6px;
+        align-items: stretch;
+    }
+    #add-to-cart, #contact-seller {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 0.98rem;
+    }
+    .seller-profile {
+        gap: 8px;
+        padding-top: 12px;
+    }
+    .seller-avatar {
+        width: 32px;
+        height: 32px;
+    }
+} 
